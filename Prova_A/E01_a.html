@@ -7,7 +7,11 @@
     */
 
     //ENTRADA
-
+    const nota1 = prompt(`Informe sua primeira nota:`).replace(",",".");
+    const nota2 = prompt(`Informe sua segunda nota: `).replace(",",".");
+    const nota3 = prompt(`Informe a terceira nota: `).replace(",",".");
+    const media = (Number(nota1) + Number(nota2) + Number(nota3)) / 3;
+    alert(`Sua média final é: ${media.toFixed(2).replace(".",",")}`);
 
     //PROCESSAMENTO
 
