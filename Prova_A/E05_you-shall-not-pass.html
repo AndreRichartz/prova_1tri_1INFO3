@@ -8,11 +8,11 @@
     */
 
     //ENTRADA
-
-
+    const consumo = prompt(`Informe quantos km a moto faz por litro: `).replace(",",",");
+    const kms = prompt(`Informe quantos kms foram rodados: `).replace(",",",");
     //PROCESSAMENTO
-
-
+    const resultado = Number(kms) / Number(consumo);
+    const custo = (Math.floor(Number(kms) / 2000) * 200);
     //SAÍDA
-
+    alert(`Foram consumidos ${resultado.toFixed(2).replace(".",",")} litros. O custo da revisão foi: R$${custo.toFixed(2).replace(".",",")}`);
 </script>
